@@ -3,55 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+</style>
 <body>
-<div class="profile">
-    <div class="photo"></div>
-    <div class="about_me">
-        <h4>Nikita Zadorotskas</h4>
-        <h5>Java/Kotlin developer from Saint Petersburg</h5>
-    </div>
-</div>
-<div class="main_information">
-    <div class="education">
-        <h4>Education</h4>
-        <h5>I am studying in Peter The Great St.Petersburg Polytechnic University</h5>
-    </div>
-    <div class="work_experience">
-        <h4>Work experience</h4>
-        <div class="projects">
-            <div class="project">
-                <h5>Some cool project</h5>
-                <h6><i>description</i></h6>
-            </div>
-            <div class="project">
-                <h5>One more cool project</h5>
-                <h6><i>description</i></h6>
-            </div>
-            <div class="project">
-                <h5>The coolest project</h5>
-                <h6><i>description</i></h6>
+    <div class="body_wrapper">
+        <div class="profile">
+            <img src="img/avatar.png" alt="My Avatar">
+            <div class="about_me">
+                <p class="name">Nikita Zadorotskas</p>
+                <p class="description">Java/Kotlin developer from Saint Petersburg</p>
             </div>
         </div>
+        <div class="main_information">
+            <div class="education">
+                <h2>Education</h2>
+                <p class="description">I am studying in Peter The Great St.Petersburg Polytechnic University</p>
+            </div>
+            <div class="work_experience">
+                <h2>Work experience</h2>
+                <div class="projects">
+                    <div class="project">
+                        <h3>Some cool project</h3>
+                        <p class="description">Some description of a pretty cool project.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Some cool project</h3>
+                        <p class="description">Some description of a pretty cool project.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Some cool project</h3>
+                        <p class="description">Some description of a pretty cool project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts_wrapper">
+                <h2>My contacts: </h2>
+                <div class="contacts">
+                    <div class="contacts_column">
+                        <div class="contact">
+                            <img src="img/github.png" alt="Github icon">
+                            <a href="https://github.com/zadorotskas">GitHub</a>
+                        </div>
+                        <div class="contact">
+                            <img src="img/telegram.png" alt="Github icon">
+                            <a href="https://t.me/Safituren">Telegram</a>
+                        </div>
+                    </div>
+                    <div class="contacts_column">
+                        <div class="contact">
+                            <img src="img/vk.png" alt="Github icon">
+                            <a href="https://vk.com/safiruten">VK</a>
+                        </div>
+                        <div class="contact">
+                            <img src="img/ok.png" alt="Github icon">
+                            <a href="https://ok.ru/zadorotskas">OK</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <img src="img/yandexmail.png" alt="Github icon">
+                        <a href="mailto:zadorotskas@yandex.ru">Yandex Mail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="contacts">
-        <h5>My contacts: </h5>
-        <div class="contact">
-            <p><a class="GitHub" href="https://github.com/zadorotskas">GitHub</a></p>
-        </div>
-        <div class="contact">
-            <p><a class="VK" href="https://vk.com/safiruten">VK</a></p>
-        </div>
-        <div class="contact">
-            <p><a class="OK" href="https://ok.ru/zadorotskas">OK</a></p>
-        </div>
-        <div class="contact">
-            <p>Telegram: @Safiruten</p>
-        </div>
-        <div class="contact">
-            <p>Mail: zadorotskas@yandex.ru</p>
-        </div>
-    </div>
-</div>
 </body>
 </html>

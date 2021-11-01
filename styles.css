@@ -12,6 +12,7 @@ body {
     font-family: Helvetica;
     font-size: 14px;
     line-height: 1.15;
+    color: white;
 }
 
 .body_wrapper {
@@ -24,9 +25,7 @@ body {
 }
 
 p, h2, h3, a {
-    color: white;
     text-decoration: none;
-    font-family: Helvetica;
 }
 
 .profile .description {
@@ -37,7 +36,7 @@ p, h2, h3, a {
     margin-right: auto;
 }
 
-h2, h3, a {
+h3{
     font-size: 20px;
     font-weight: bold;
 }
@@ -48,6 +47,10 @@ h2 {
 
 /* --------- PROFILE --------- */
 
+.avatar {
+    filter: drop-shadow(12px 12px 4px #C4C4C4);
+}
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -57,6 +60,7 @@ h2 {
 }
 
 .profile img {
+    padding: 0 0 17px 0;
     width: 45%;
 }
 
@@ -64,6 +68,27 @@ h2 {
     font-size: 38px;
     font-weight: bold;
     text-align: center;
+}
+
+.download_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 46px;
+    background: #444444;
+    border: 3px solid white;
+    border-radius: 40px;
+}
+
+.download_button {
+    width: 105px;
+    height: 20px;
+    padding: 0 0 0 0;
+    font-size: 17px;
+    color: white;
+    border: 0;
+    background: transparent;
 }
 
 /* --------- MAIN INFORMATION --------- */
@@ -91,8 +116,6 @@ text-align: center;
 
 .projects {
     display: flex;
-    flex-direction: row;
-
 }
 
 .project .description {
@@ -101,23 +124,14 @@ text-align: center;
 
 .contacts {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-}
-
-.contacts_column {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    flex-basis: 34.2%;
 }
 
 .contact {
     display: flex;
-    flex-direction: row;
-    gap: 1.5em;
     align-items: center;
+    flex-basis: 10%;
 }
 
 .contact img {

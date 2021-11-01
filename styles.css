@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 1.15;
+    color: white;
+}
+
+.body_wrapper {
+    display: flex;
+    width: 1127px;
+    height: 595px;
+    background: #444444;
+    border-radius: 30px;
+    display: flex;
+}
+
+p, h2, h3, a {
+    text-decoration: none;
+}
+
+.profile .description {
+    width: 70%;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+/* --------- PROFILE --------- */
+
+.avatar {
+    filter: drop-shadow(12px 12px 4px #C4C4C4);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile img {
+    padding: 0 0 17px 0;
+    width: 45%;
+}
+
+.name {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.download_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 46px;
+    background: #444444;
+    border: 3px solid white;
+    border-radius: 40px;
+}
+
+.download_button {
+    width: 105px;
+    height: 20px;
+    padding: 0 0 0 0;
+    font-size: 17px;
+    color: white;
+    border: 0;
+    background: transparent;
+}
+
+/* --------- MAIN INFORMATION --------- */
+
+.main_information {
+    background-color: #222222;
+    width: 667px;
+    height: 595px;
+    left: 380px;
+    top: 0px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 40px;
+}
+
+.education {
+    text-align: center;
+}
+
+.work_experience h2 {
+text-align: center;
+}
+
+.projects {
+    display: flex;
+}
+
+.project .description {
+    width: 90%;
+}
+
+.contacts {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    flex-basis: 10%;
+}
+
+.contact img {
+    height: 2.5em;
+}

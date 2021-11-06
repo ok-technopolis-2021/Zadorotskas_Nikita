@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<section class="body-wrapper">
+    <section class="profile">
+        <img class="profile__avatar" src="img/avatar.png" alt="My Avatar">
+        <section class="profile__about-me">
+            <p class="profile__name">Nikita Zadorotskas</p>
+            <p class="profile__description">Java/Kotlin developer from Saint Petersburg</p>
+        </section>
+        <div class="profile__download-wrapper">
+            <button class="profile__download-button">Download CV</button>
+        </div>
+    </section>
+    <section class="main-information">
+        <button class="change-theme-button" onclick="toggleTheme()">
+        </button>
+        <header class="education">
+            <h2>Education</h2>
+            <p class="education__description">I am studying in Peter The Great St.Petersburg Polytechnic University</p>
+        </header>
+        <header class="work-experience">
+            <h2 class="work-experience__header">Work experience</h2>
+            <section class="projects">
+                <div class="projects__project">
+                    <h3>Some cool project</h3>
+                    <p class="projects__description">Some description of a pretty cool project.</p>
+                </div>
+                <div class="projects__project">
+                    <h3>Some cool project</h3>
+                    <p class="projects__description">Some description of a pretty cool project.</p>
+                </div>
+                <div class="projects__project">
+                    <h3>Some cool project</h3>
+                    <p class="projects__description">Some description of a pretty cool project.</p>
+                </div>
+            </section>
+        </header>
+        <header class="contacts-wrapper">
+            <h2>My contacts: </h2>
+            <section class="contacts">
+                <div class="contacts__contact">
+                    <a href="https://github.com/zadorotskas">
+                        <img class="contacts__image" src="img/github.png" alt="Github icon">
+                    </a>
+                </div>
+                <div class="contacts__contact">
+                    <a href="https://t.me/Safituren">
+                        <img class="contacts__image" src="img/telegram.png" alt="Telegram icon">
+                    </a>
+                </div>
+                <div class="contacts__contact">
+                    <a href="https://vk.com/safiruten">
+                        <img class="contacts__image" src="img/vk.png" alt="VK icon">
+                    </a>
+                </div>
+                <div class="contacts__contact">
+                    <a href="https://ok.ru/zadorotskas">
+                        <img class="contacts__image" src="img/ok.png" alt="OK icon">
+                    </a>
+                </div>
+                <div class="contacts__contact">
+                    <a href="mailto:zadorotskas@yandex.ru">
+                        <img class="contacts__image" src="img/yandexmail.png" alt="Yandex mail icon">
+                    </a>
+                </div>
+            </section>
+        </header>
+    </section>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

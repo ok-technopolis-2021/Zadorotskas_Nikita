@@ -1,75 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-theme">
+
 <head>
     <meta charset="UTF-8">
     <title>CV</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<section class="body_wrapper">
+<section class="body-wrapper">
     <section class="profile">
-        <img class="avatar" src="img/avatar.png" alt="My Avatar">
-        <section class="about_me">
-            <p class="name">Nikita Zadorotskas</p>
-            <p class="description">Java/Kotlin developer from Saint Petersburg</p>
+        <img class="profile__avatar" src="img/avatar.png" alt="My Avatar">
+        <section class="profile__about-me">
+            <p class="profile__name">Nikita Zadorotskas</p>
+            <p class="profile__description">Java/Kotlin developer from Saint Petersburg</p>
         </section>
-        <div class="download_wrapper">
-            <button class="download_button">Download CV</button>
+        <div class="profile__download-wrapper">
+            <button class="profile__download-button">Download CV</button>
         </div>
     </section>
-    <section class="main_information">
+    <section class="main-information">
+        <button class="change-theme-button" onclick="toggleTheme()">
+        </button>
         <header class="education">
             <h2>Education</h2>
-            <p class="description">I am studying in Peter The Great St.Petersburg Polytechnic University</p>
+            <p class="education__description">I am studying in Peter The Great St.Petersburg Polytechnic University</p>
         </header>
-        <header class="work_experience">
-            <h2>Work experience</h2>
+        <header class="work-experience">
+            <h2 class="work-experience__header">Work experience</h2>
             <section class="projects">
-                <div class="project">
+                <div class="projects__project">
                     <h3>Some cool project</h3>
-                    <p class="description">Some description of a pretty cool project.</p>
+                    <p class="projects__description">Some description of a pretty cool project.</p>
                 </div>
-                <div class="project">
+                <div class="projects__project">
                     <h3>Some cool project</h3>
-                    <p class="description">Some description of a pretty cool project.</p>
+                    <p class="projects__description">Some description of a pretty cool project.</p>
                 </div>
-                <div class="project">
+                <div class="projects__project">
                     <h3>Some cool project</h3>
-                    <p class="description">Some description of a pretty cool project.</p>
+                    <p class="projects__description">Some description of a pretty cool project.</p>
                 </div>
             </section>
         </header>
-        <header class="contacts_wrapper">
+        <header class="contacts-wrapper">
             <h2>My contacts: </h2>
             <section class="contacts">
-                <div class="contact">
+                <div class="contacts__contact">
                     <a href="https://github.com/zadorotskas">
-                        <img src="img/github.png" alt="Github icon">
+                        <img class="contacts__image" src="img/github.png" alt="Github icon">
                     </a>
                 </div>
-                <div class="contact">
+                <div class="contacts__contact">
                     <a href="https://t.me/Safituren">
-                        <img src="img/telegram.png" alt="Telegram icon">
+                        <img class="contacts__image" src="img/telegram.png" alt="Telegram icon">
                     </a>
                 </div>
-                <div class="contact">
+                <div class="contacts__contact">
                     <a href="https://vk.com/safiruten">
-                        <img src="img/vk.png" alt="VK icon">
+                        <img class="contacts__image" src="img/vk.png" alt="VK icon">
                     </a>
                 </div>
-                <div class="contact">
+                <div class="contacts__contact">
                     <a href="https://ok.ru/zadorotskas">
-                        <img src="img/ok.png" alt="OK icon">
+                        <img class="contacts__image" src="img/ok.png" alt="OK icon">
                     </a>
                 </div>
-                <div class="contact">
+                <div class="contacts__contact">
                     <a href="mailto:zadorotskas@yandex.ru">
-                        <img src="img/yandexmail.png" alt="Yandex mail icon">
+                        <img class="contacts__image" src="img/yandexmail.png" alt="Yandex mail icon">
                     </a>
                 </div>
             </section>
         </header>
     </section>
 </section>
+
+<script src="script.js"></script>
 </body>
 </html>

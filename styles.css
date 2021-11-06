@@ -1,3 +1,17 @@
+.dark-theme {
+    --background-profile-color:  #444444;
+    --background-main-color: #222222;
+    --text-color: #FFFFFF;
+    --background-button: url("img/sun.png");
+}
+
+.light-theme {
+    --background-profile-color:  #f2f2f2;
+    --background-main-color: #a8e1ff;
+    --text-color: #222222;
+    --background-button: url("img/moon.png");
+}
+
 html {
     height: 100%;
 }
@@ -12,29 +26,18 @@ body {
     font-family: Helvetica;
     font-size: 14px;
     line-height: 1.15;
-    color: white;
+    color: var(--text-color);
 }
 
-.body_wrapper {
+.body-wrapper {
     display: flex;
     width: 1127px;
     height: 595px;
-    background: #444444;
+    background: var(--background-profile-color);
     border-radius: 30px;
     display: flex;
 }
 
-p, h2, h3, a {
-    text-decoration: none;
-}
-
-.profile .description {
-    width: 70%;
-    text-align: center;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 h3{
     font-size: 20px;
@@ -47,8 +50,18 @@ h2 {
 
 /* --------- PROFILE --------- */
 
-.avatar {
+.profile__avatar {
     filter: drop-shadow(12px 12px 4px #C4C4C4);
+    padding: 0 0 17px 0;
+    width: 45%;
+}
+
+.profile__description {
+    width: 70%;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile {
@@ -59,42 +72,38 @@ h2 {
     justify-content: center;
 }
 
-.profile img {
-    padding: 0 0 17px 0;
-    width: 45%;
-}
 
-.name {
+.profile__name {
     font-size: 38px;
     font-weight: bold;
     text-align: center;
 }
 
-.download_wrapper {
+.profile__download-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 168px;
     height: 46px;
-    background: #444444;
-    border: 3px solid white;
+    border: 3px solid;
+    border-color: var(--text-color);
     border-radius: 40px;
 }
 
-.download_button {
+.profile__download-button {
     width: 105px;
     height: 20px;
     padding: 0 0 0 0;
     font-size: 17px;
-    color: white;
+    color: var(--text-color);
     border: 0;
     background: transparent;
 }
 
 /* --------- MAIN INFORMATION --------- */
 
-.main_information {
-    background-color: #222222;
+.main-information {
+    background-color: var(--background-main-color);
     width: 667px;
     height: 595px;
     left: 380px;
@@ -102,15 +111,29 @@ h2 {
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 0 40px;
 }
 
-.education {
-    text-align: center;
+.change-theme-button {
+    height: 30px;
+    width: 30px;
+    align-self: end;
+    background: no-repeat 0 0 transparent;
+    background-size: cover;
+    background-image: var(--background-button);
+    border: 0;
 }
 
-.work_experience h2 {
+.education {
+    margin: 20px 0;
+    text-align: center;
+}
+.work-experience {
+    margin: 20px 0;
+}
+
+.work-experience__header {
 text-align: center;
 }
 
@@ -118,22 +141,23 @@ text-align: center;
     display: flex;
 }
 
-.project .description {
+.projects__description {
     width: 90%;
 }
 
 .contacts {
+    margin: 20px 0;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-.contact {
+.contacts__contact {
     display: flex;
     align-items: center;
     flex-basis: 10%;
 }
 
-.contact img {
+.contacts__image {
     height: 2.5em;
 }

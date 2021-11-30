@@ -14,11 +14,3 @@ function toggleTheme() {
 document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementsByClassName("change-theme-button").addEventListener('click', toggleTheme);
 });
-
-(function () {
-   if (localStorage.getItem('theme') === 'dark-theme') {
-       setTheme('dark-theme');
-   } else {
-       setTheme('light-theme');
-   }
-})();

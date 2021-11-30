@@ -52,27 +52,27 @@ h2 {
 
 /* --------- PROFILE --------- */
 
-.profile__avatar {
-    filter: drop-shadow(12px 12px 4px #C4C4C4);
-    padding: 0 0 17px 0;
-    width: 45%;
-}
-
-.profile__description {
-    width: 70%;
-    text-align: center;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .profile {
     display: flex;
     flex-direction: column;
     width: 380px;
     align-items: center;
     justify-content: center;
-}
+
+    .profile__avatar {
+        filter: drop-shadow(12px 12px 4px #C4C4C4);
+        padding: 0 0 17px 0;
+        width: 45%;
+    }
+
+    .profile__description {
+        width: 70%;
+        text-align: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 
 .profile__name {
@@ -101,6 +101,8 @@ h2 {
     border: 0;
     background: transparent;
 }
+}
+
 
 /* --------- MAIN INFORMATION --------- */
 
@@ -136,7 +138,7 @@ h2 {
 }
 
 .work-experience__header {
-text-align: center;
+    text-align: center;
 }
 
 .projects {

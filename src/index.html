@@ -21,7 +21,7 @@
         </div>
     </section>
     <section class="main-information">
-        <button class="change-theme-button" onclick="toggleTheme()">
+        <button class="change-theme-button">
         </button>
         <header class="education">
             <h2>Education</h2>
@@ -74,6 +74,22 @@
                 </div>
             </section>
         </header>
+        <section class="skills">
+            <h2 class="skills__header">Skills</h2>
+            <div class="skills__container">
+                <div class="skills__form">
+                    <input type="text" id="skillName" class="skill-form__input" placeholder=" ">
+                    <label for="skillName" class="skill-form__label">Skill</label>
+                </div>
+                <div class="skills__form">
+                    <input type="text" id="skillPointer" class="skill-form__input" placeholder=" ">
+                    <label for="skillPointer" class="skill-form__label">Level</label>
+                </div>
+                <button class="skills__button" id="skill-button">+</button>
+            </div>
+
+            <div class="skills__list"></div>
+        </section>
     </section>
 </section>
 

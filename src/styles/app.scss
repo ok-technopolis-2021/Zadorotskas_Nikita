@@ -34,7 +34,7 @@ body {
 .body-wrapper {
     display: flex;
     width: 1127px;
-    height: 595px;
+    height: fit-content;
     background: var(--background-profile-color);
     border-radius: 30px;
     display: flex;
@@ -73,34 +73,32 @@ h2 {
         margin-right: auto;
     }
 
+    .profile__name {
+        font-size: 38px;
+        font-weight: bold;
+        text-align: center;
+    }
 
+    .profile__download-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 168px;
+        height: 46px;
+        border: 3px solid;
+        border-color: var(--text-color);
+        border-radius: 40px;
+    }
 
-.profile__name {
-    font-size: 38px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.profile__download-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 168px;
-    height: 46px;
-    border: 3px solid;
-    border-color: var(--text-color);
-    border-radius: 40px;
-}
-
-.profile__download-button {
-    width: 105px;
-    height: 20px;
-    padding: 0 0 0 0;
-    font-size: 17px;
-    color: var(--text-color);
-    border: 0;
-    background: transparent;
-}
+    .profile__download-button {
+        width: 105px;
+        height: 20px;
+        padding: 0 0 0 0;
+        font-size: 17px;
+        color: var(--text-color);
+        border: 0;
+        background: transparent;
+    }
 }
 
 
@@ -109,14 +107,14 @@ h2 {
 .main-information {
     background-color: var(--background-main-color);
     width: 667px;
-    height: 595px;
+    height: fit-content;
     left: 380px;
     top: 0px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 40px;
+    padding: 40px;
 }
 
 .change-theme-button {
@@ -130,14 +128,14 @@ h2 {
 }
 
 .education {
-    margin: 20px 0;
     text-align: center;
 }
+
 .work-experience {
     margin: 20px 0;
 }
 
-.work-experience__header {
+.work-experience__header, .education {
     text-align: center;
 }
 
@@ -164,4 +162,144 @@ h2 {
 
 .contacts__image {
     height: 2.5em;
+}
+
+
+/* --------- SKILLS --------- */
+
+.skills__container {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills__header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.skills__form {
+    position: relative;
+}
+
+input {
+    background: none;
+    color: var(--text-color);
+    font-size: 18px;
+    padding: 10px 10px 10px;
+    display: block;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    border-color: var(--text-color);
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid;
+    border-color: var(--text-color);
+    border-radius: 0;
+}
+
+input:focus ~ label, label:active {
+    top: -14px;
+}
+
+input:not(:placeholder-shown) ~ label, label:active {
+    top: -14px;
+}
+
+label {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+}
+
+.skills__button, .skill__delete-button {
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+
+.skills__button {
+    height: 45px;
+    padding: 13px 23px;
+}
+
+.skill__delete-button {
+    padding: 3px 8px;
+}
+
+.skills__button:focus-visible, .skill__delete-button:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow 0.2s;
+}
+
+.skills__button:active, .skill__delete-button:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+}
+
+.skills__button:disabled, .skill__delete-button:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.skills__list {
+    padding: 25px 0;
+    font-weight: bold;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill {
+    border: 1px solid;
+}
+
+.skill__info {
+    display: flex;
+    align-items: center;
+    flex-basis: 10%;
+    margin: 3px;
+}
+
+.skill__bar {
+    width: 100%;
+    border: 2px solid;
+    border-color: var(background-profile-color);
+    background-color: var(background-profile-color);
+}
+
+.skill__name {
+    width: 100px;
+    margin: 5px;
+}
+
+.skill__level {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--text-color);
 }

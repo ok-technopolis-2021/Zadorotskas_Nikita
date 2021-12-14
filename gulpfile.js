@@ -34,7 +34,7 @@ gulp.task('rollup', async (done) => {
     const bundle = await rollup.rollup(rollupConfig);
 
     bundle.write({
-        format: 'esm',
+        format: 'iife',
         file: 'dist/app.js'
     });
 
